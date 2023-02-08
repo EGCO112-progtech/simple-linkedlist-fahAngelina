@@ -106,6 +106,7 @@ int main(int argc, const char * argv[]) {
      */
     tmp=head;
     while(tmp!=NULL){
+      printf("deleting %d \n",tmp->value);
       head=head->next;
       free(tmp);//อย่าใช้ตัวแปลนี้แล้วหลังfree
       tmp=head;
